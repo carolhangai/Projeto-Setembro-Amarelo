@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');/*link da fonte passion one */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');/*link da fonte sriracha */
+
+:root{
+    --fonte1: 'Verdana', Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;/*font family */
+    --fonte3: 'Sriracha', cursive;/*font family */
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    } /*configurações gerais */
+
+
+html, body{
+    min-height: 100vh; /*Tamanho do site */
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+}/*configurações de html e body */
+
+header{
+    background-color: rgba(238, 238, 25, 0.959); /*cor de fundo do cabeçalho */
+    color: black; /*cor da letra do cabeçalho */
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    text-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 4em;
+    font-size: 10vw;
+    /* text-transform: uppercase; transforma todas as letras em maiusculas */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}/*configuração do link e do rodapé */
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}/* underline quando passa o mouse */
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento entre linhas */
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.0vw;/*vw= letra se adatpa a largura da página */
+}/* vh= view hight */
+
+section >p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-image: linear-gradient(to bottom, #eeeccf, #e5ec7fa6, #ebd517);
+    color: black;
+}
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black; /*sombreado para dentro */
+    background-attachment: fixed; /*fundo fixo */
+}
+
+section.imagem >p{
+    display: inline-block; /*caixa que se adapta ao tamanho do conteúdo */
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.250);
+    text-shadow: 2px 2px 2px black;
+}
+
+section#img01{
+    background-image: url(imagens/setembro.jpg);
+    background-size: cover;
+}
+section#img02{
+    background-image:url(imagens/amigos.jpg);
+    background-size: cover;
+}
+section#img03{
+    background-image: url(imagens/mao.jpg);
+    background-size: cover;
+}
+
+section#img04{
+    background-image: url(imagens/girassol\ \(1\).jpg);
+    background-size: cover;
+}
+footer{
+    background-color: rgba(238, 238, 25, 0.959);
+    color:black;
+    text-align: center;
+    padding: 10px;
+}/*rodapé */
